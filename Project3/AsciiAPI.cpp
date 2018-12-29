@@ -252,10 +252,6 @@ void AsciiWindow::Conversion(WCHAR* image_path, std::string ascii_path)
 	Gdiplus::Bitmap bm(image_path);
 	std::fstream fvar;
 	fvar.open(ascii_path.c_str(), std::ios::out);
-	if (!fvar.good())
-	{
-		MessageBox(0,"")
-	}
 	int res_x = image_width / ascii_width;
 	int res_y = image_height / ascii_height;
 	float brightness = 0;
